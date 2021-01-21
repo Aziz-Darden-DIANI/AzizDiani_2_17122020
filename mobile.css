@@ -1,0 +1,122 @@
+
+      body
+    {
+        min-width: 355px;
+    }
+    /*HEADER --NAVIGATION--*/
+    .headerBox
+    {
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .logoReservia
+    {
+        flex-basis: 70%;
+    }
+    .hebergementText, .hebergementText:hover, .activiteText:hover
+    {
+        border-top: none; 
+    }
+    .navHosting, .navActivite
+    {
+        order: 3;
+        align-items: flex-end;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 3px solid #F2F2F2;
+        flex-basis: 35%;
+    }
+    .navHosting:hover, .navActivite:hover
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+    .navActivite, .inscription
+    {
+        margin-left: 0;
+    }
+    .navHosting
+    {
+        margin-left: 1.5rem;
+    }
+    .activiteText
+    {
+        display: block;
+        text-align: end;
+        margin-right: 1.5rem;
+    }
+    .activiteText:hover
+    {
+        padding-top: 0;
+    }
+    
+    /*--MAIN RECHERCHE--*/
+    .siteRecherche
+    {
+        width: 12rem;
+        min-width: 9rem;
+    }
+    .buttonRecherche
+    {
+        width: 4rem;
+        padding-bottom: 1rem;
+    }
+    .textRecherche
+    {
+        display: none;
+    }
+    .iconSearch
+    {
+        visibility: visible;
+    }
+
+    /* --MAIN FILTRES-- */
+    .filtres
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .filtreBox
+    {
+        margin-bottom:1rem;
+    }
+
+    /*--MAIN POPULAIRES--*/
+    .populaire, .hebergements
+    {
+        margin-left: 0rem;
+    }
+    .location
+    {
+        margin-right: 0rem;
+    }
+    .imageP
+    {
+        width: 7rem;
+    }
+    
+    h3
+    {
+        font-size: 1em;
+    }
+
+    /*--FOOTER--*/
+    .footbox
+    {
+       flex-direction: column;
+       padding-left: 2rem;
+    }
+
+/*-- MEDIA QUERIES MOBILE TRES PETIT ECRAN --*/
+@media screen and (max-width:355px)
+{
+    .headerBox, .rechercheFiltreInfo,  .activites
+    {
+        margin-left: 1.3rem;
+    }
+    .footbox
+    {
+        padding-left: 1.3rem;
+    }
+}

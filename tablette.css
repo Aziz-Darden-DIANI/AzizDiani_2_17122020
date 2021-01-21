@@ -1,0 +1,41 @@
+
+    .populaireBox
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .cardPopulaire
+    {
+        width: 100%;
+        height: 9rem;
+    }
+    .populaire
+    {
+        padding-right: 2.5rem;
+    }
+    .imageP
+    {
+        width: 15rem;
+    }
+    .cardHosting
+    {
+        width: 48%;
+    }
+    .cardA
+    {
+        width: 48%;
+        margin-top: 2.5rem;
+    }
+    .cardA-img
+    {
+        height: 11rem;
+    }
+
+@media screen and (max-width:850px)
+{
+    .cardHosting, .cardA
+    {
+        width: 100%;
+    }
+}
+

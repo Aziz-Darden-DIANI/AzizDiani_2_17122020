@@ -1,0 +1,496 @@
+/*BODY*/
+body 
+{
+    font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+    max-width: 1480px;
+}
+p
+{
+    color: #383838;
+}
+
+/*HEADER --NAVIGATION--*/
+.headerBox
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoReservia
+{
+    flex-basis: 90%;
+}
+.Reservia
+{
+    height: 2.8rem;
+}
+.hebergementText:hover, .activiteText:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 2rem;
+    color: #0065fc;
+    cursor: pointer;
+}
+.hebergementText
+{
+    padding-top: 2rem;
+}
+.navActivite
+{
+    margin-left: 2rem;
+}
+.activiteText, .hebergementText
+{
+    color:black;
+    text-decoration: none;
+}
+.inscription
+{
+    color: #0065fc;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+/*--MAIN RECHERCHE FILTRE INFO*/
+.rechercheFiltreInfo
+{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/*--MAIN RECHERCHE--*/
+.titreHeader
+{
+    margin-top: 2.5rem;
+}
+#soustitre
+{
+    margin-top: -1rem;
+}
+.recherche
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.siteRecherche
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border: 1px #f2f2f2 solid;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 14rem;
+}
+::placeholder
+{
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+}
+.buttonRecherche
+{
+    background-color:  #0065FC;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border:none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 8.5rem;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.iconSearch
+{
+    visibility: hidden;
+}
+.localisation
+{
+    background-color:  #f2f2f2;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3.25rem;
+}
+    
+/*--MAIN INFORMATION--*/
+#infoBox
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.infoImg
+{
+    height: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.faviconImg
+{
+    color:#0065fc;
+}
+
+/* --MAIN FILTRES-- */
+.filtres
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.filtreBox
+{
+    display:flex;
+    align-items: center;
+    border: 2px #d9d9d9 solid;
+    border-radius: 2rem;
+    
+    height: 3.25rem;
+    cursor: pointer;
+}
+.filtreBox:hover
+{
+    transform: scale(1.1);
+}
+.filtre-img
+{
+    display:flex;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    margin-left: -2px;
+}
+.imageFiltre
+{
+    color:#0065FC; 
+}
+.filtre-content
+{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1em;
+    font-weight:bold;
+}
+
+/*--MAIN LOCATION--*/
+.location
+{
+    display:flex;
+}
+.hebergements, .populaire
+{
+    background-color: #f2f2f2;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+}
+.hebergements
+{
+    margin-left: 2rem;
+    padding-right: 2rem;
+}
+.populaire
+{
+    margin-left: 2rem;
+}
+
+
+/* --MAIN HEBERGEMENT--*/
+.cardHosting
+{
+    background-color: white;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    padding: 0.375rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-sizing: border-box
+}
+.cardHosting:hover
+{
+    transform: scale(1.025);
+}
+.herbergementBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content
+{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.imageH
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:  1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+}
+
+/*--MAIN POPULAIRE--*/
+.cardPopulaire
+{
+    background-color: white;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    display: flex; 
+    margin-top: 2rem; 
+    cursor: pointer;
+}
+.cardP-img
+{
+    margin:0.3rem;
+}
+.cardPopulaire:hover
+{
+    transform: scale(1.025);
+}
+.cardP-content
+{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.imageP
+{
+    height: 100%;
+    border-top-left-radius:  1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}
+
+/*--MAIN ACTIVITES--*/
+.activites
+{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.activitesBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardA
+{
+    background-color: white;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.cardA:hover
+{
+    transform: scale(1.025);
+}
+.imageA
+{
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+}
+.cardActivitesTitle
+{
+    padding-left: 1.3rem;
+}
+
+/*--FOOTER--*/
+footer
+{
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2.25rem;
+}
+.footbox
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*Media queries Responsive*/
+
+/*--MEDIA QUERIES DESKTOP GENERAL--*/
+@media screen and (min-width:601px)
+{
+    .filtreBox
+    {
+        margin-left: 2rem;
+    }
+}
+@media screen and (min-width:1441px)
+{  
+    .populaire
+    {
+        margin-right: 2rem;
+        padding-right: 2rem;
+    }
+    .cardPopulaire
+    {
+        width: 25rem;
+        height: 9rem;
+    }
+    .imageP
+    {
+        width: 7.75rem;
+    }
+    .cardHosting
+    {
+        width: 16rem;
+    }
+    .card-img
+    {
+        height: 7rem;
+    }
+    h3 + p
+    {
+        line-height: 0.3em;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .location
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        margin-right: 2rem;
+    }
+    .populaireBox
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+    }
+    .cardPopulaire
+    {
+        width: 30%;
+        height: 10rem;
+    }
+    .imageP
+    {
+        width: 7.75rem;
+    }
+    .cardHosting
+    {
+        width: 30%;
+    }
+    .card-img
+    {
+        height: 11rem;
+    }
+    .populaire
+    {
+        padding-right: 2rem;
+    }
+}
+
+/*--MEDIA QUERIES DESKTOP SPECIFIQUE SECTION ACTIVITES--*/
+@media screen and (min-width: 1251px)
+{
+    .activites
+    {
+        height: 37rem;
+    }
+    .cardA
+    {
+        width: 23.85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cardFrioul
+    {
+        position: relative;
+        right: 25.4%;
+        top: 20.45rem;
+    }
+    .cardCalanques
+    {
+        position: relative;
+        right: 25.4%;
+    }
+    .cardLongchamp
+    {
+        position: relative;
+        bottom: 19rem;
+    }
+    .cardDame
+    {
+        position: relative;
+        left: 76%;
+        bottom: 33.1rem;
+    }
+    .cardvieuxPort, .cardCalanques
+    {
+        height: 33.1rem;
+    }
+    .cardPomegues, .cardLongchamp
+    {
+        height: 19rem; 
+    }
+    .cardFrioul, .cardDame
+    {
+        height: 12.6rem;
+    }
+
+    .heihtImgDame, .heihtImgFrioul
+    {
+        height: 71%;
+    }
+    .heihtImgvieuxPort, .heihtImgCalanques
+    {
+        height: 100%;
+    }
+    .heihtImgPomegues, .heihtImgLongchamp
+    {
+        height: 81%;
+    }
+}
+
+/*--MEDIA QUERIES TABLETTE--*/
+@media screen and (min-width:1131px) and (max-width:1250px)
+{
+    .cardA
+    {
+        width: 30%;
+        margin-top: 2.5rem;
+    }
+    .cardA-img
+    {
+        height: 11rem;
+    }
+}
