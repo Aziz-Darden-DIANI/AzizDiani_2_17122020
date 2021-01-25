@@ -2,7 +2,6 @@
 body 
 {
     font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
-    max-width: 1480px;
 }
 p
 {
@@ -371,7 +370,8 @@ footer
     }
     .cardHosting
     {
-        width: 16rem;
+        width: 30%;
+        margin-left: 1rem;
     }
     .card-img
     {
@@ -492,5 +492,9 @@ footer
     .cardA-img
     {
         height: 11rem;
+    }
+    .cardPopulaire
+    {
+        overflow: auto;
     }
 }
